@@ -3,29 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>MySpringCloudVer159</artifactId>
+        <artifactId>my_hystrix</artifactId>
         <groupId>com.sixon</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>my_eureka</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
 
-
-
-    <modules>
-        <module>eureka01</module>
-        <module>eureka02</module>
-        <module>eureka03</module>
-    </modules>
+    <artifactId>hystrixForFeign</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        <dependency>
+            <artifactId>my_feign</artifactId>
+            <groupId>com.sixon</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sixon</groupId>
+            <artifactId>feign01</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
-
 
 </project>

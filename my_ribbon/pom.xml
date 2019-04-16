@@ -8,24 +8,24 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>my_eureka</artifactId>
+
+    <artifactId>my_ribbon</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-
-
-
     <modules>
-        <module>eureka01</module>
-        <module>eureka02</module>
-        <module>eureka03</module>
+        <module>ribbon01</module>
+        <module>ribbon02</module>
+        <module>ribbon03</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

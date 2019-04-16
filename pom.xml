@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>my_eureka</module>
+        <module>my_ribbon</module>
+        <module>my_service</module>
+        <module>my_feign</module>
+        <module>my_hystrix</module>
     </modules>
 
     <parent>
@@ -18,6 +22,7 @@
         <version>1.5.9.RELEASE</version>
         <relativePath/>
     </parent>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
